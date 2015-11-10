@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatternsExamples.Common", "DesignPatternsExamples.Common\DesignPatternsExamples.Common.csproj", "{6FE8AEB4-541D-45D8-AE69-6F0FD7B6E3D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatternsExamples.HeroesWebService", "DesignPatternsExamples.HeroesWebService\DesignPatternsExamples.HeroesWebService.csproj", "{8B15CFBE-BA45-4F3D-B4F1-33813594A304}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatternsExamples.HeroApp", "DesignPatternsExamples.HeroApp\DesignPatternsExamples.HeroApp.csproj", "{A90081F6-451E-42BD-A529-EAB309706ACB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6FE8AEB4-541D-45D8-AE69-6F0FD7B6E3D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FE8AEB4-541D-45D8-AE69-6F0FD7B6E3D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FE8AEB4-541D-45D8-AE69-6F0FD7B6E3D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FE8AEB4-541D-45D8-AE69-6F0FD7B6E3D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B15CFBE-BA45-4F3D-B4F1-33813594A304}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B15CFBE-BA45-4F3D-B4F1-33813594A304}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B15CFBE-BA45-4F3D-B4F1-33813594A304}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B15CFBE-BA45-4F3D-B4F1-33813594A304}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A90081F6-451E-42BD-A529-EAB309706ACB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A90081F6-451E-42BD-A529-EAB309706ACB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A90081F6-451E-42BD-A529-EAB309706ACB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A90081F6-451E-42BD-A529-EAB309706ACB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

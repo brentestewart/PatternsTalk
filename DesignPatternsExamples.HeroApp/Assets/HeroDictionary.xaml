@@ -1,0 +1,86 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+	<SolidColorBrush x:Key="HeroBlueBrush" Color="#1485CC" />
+	<SolidColorBrush x:Key="HeroRedBrush" Color="#7F0000"/>
+
+	<LinearGradientBrush x:Key="MainBackgroundBrush" StartPoint="0,0" EndPoint="0,1">
+		<GradientStop Color="LightGray" Offset="0"/>
+		<GradientStop Color="DarkGray" Offset=".2"/>
+		<GradientStop Color="White" Offset="1"/>
+	</LinearGradientBrush>
+	
+	<LinearGradientBrush x:Key="DCBackgroundBrush" StartPoint="0,0" EndPoint="0,1">
+		<GradientStop Color="#00C51D" Offset="0"/>
+		<GradientStop Color="#007522" Offset="1"/>
+	</LinearGradientBrush>
+
+
+	<LinearGradientBrush x:Key="MarvelBackgroundBrush" StartPoint="0,0" EndPoint="0,1">
+		<GradientStop Color="#AA0000" Offset="0"/>
+		<GradientStop Color="#880000" Offset="1"/>
+	</LinearGradientBrush>
+	<SolidColorBrush x:Key="MarvelForegroundBrush" Color="Gold"/>
+	
+	<Style x:Key="HeaderText" TargetType="Label">
+		<Setter Property="FontSize" Value="28"/>
+		<Setter Property="FontFamily" Value="Comic Sans MS" />
+		<Setter Property="FontWeight" Value="Bold"/>
+		<Setter Property="Foreground" Value="Black"/>
+		<Setter Property="HorizontalAlignment" Value="Center"/>
+	</Style>
+	
+	<Style x:Key="HeroButton" TargetType="Button">
+		<Setter Property="FontFamily" Value="Comic Sans MS"/>
+		<Setter Property="FontSize" Value="14"/>
+	</Style>
+
+	<Style x:Key="HeroHeader" TargetType="Label">
+		<Setter Property="FontSize" Value="16"/>
+		<Setter Property="FontWeight" Value="Bold"/>
+		<Setter Property="FontFamily" Value="Comic Sans MS" />
+		<Setter Property="Padding" Value="5,5,5,0"></Setter>
+		<Setter Property="HorizontalAlignment" Value="Center"/>
+	</Style>
+	
+	<Style x:Key="HeroDetail" TargetType="Label">
+		<Setter Property="FontSize" Value="12"/>
+		<Setter Property="FontFamily" Value="Comic Sans MS" />
+	</Style>
+	
+	<Style x:Key="HeroList" TargetType="ListView">
+		<Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Disabled"/>
+		<Setter Property="Background" Value="{DynamicResource HeroBlueBrush}"/>
+		<Setter Property="ItemsPanel">
+			<Setter.Value>
+				<ItemsPanelTemplate>
+					<WrapPanel Orientation="Horizontal" />
+				</ItemsPanelTemplate>
+			</Setter.Value>
+		</Setter>
+		<Setter Property="ItemTemplate">
+			<Setter.Value>
+				<DataTemplate>
+					<Border Name="HeroBorder"  CornerRadius="0" Background="{DynamicResource DCBackgroundBrush}" Width="150">
+						<StackPanel HorizontalAlignment="Center">
+							<Label Name="HeroName"  Style="{DynamicResource HeroHeader}" Content="{Binding HeroName}"/>
+							<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0">
+								<Label Name="FirstName" Style="{DynamicResource HeroDetail}"  Content="{Binding FirstName}" Padding="5,0,5,5"/>
+								<Label Name="LastName"  Style="{DynamicResource HeroDetail}"  Content="{Binding LastName}" Padding="0,0,5,5"/>
+							</StackPanel>
+						</StackPanel>
+					</Border>
+					<DataTemplate.Triggers>
+						<DataTrigger Value="Marvel" Binding="{Binding ComicType}">
+							<Setter Property="Background" Value="{DynamicResource MarvelBackgroundBrush}" TargetName="HeroBorder"/>
+							<Setter Property="Foreground" Value="{DynamicResource MarvelForegroundBrush}" TargetName="HeroName"/>
+							<Setter Property="Foreground" Value="{DynamicResource MarvelForegroundBrush}" TargetName="FirstName"/>
+							<Setter Property="Foreground" Value="{DynamicResource MarvelForegroundBrush}" TargetName="LastName"/>
+						</DataTrigger>
+					</DataTemplate.Triggers>
+				</DataTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+</ResourceDictionary>

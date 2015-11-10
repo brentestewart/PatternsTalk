@@ -1,0 +1,69 @@
+﻿[
+	{
+		"FirstName": "Scott",
+		"LastName": "Lang",
+		"HeroName": "Ant-Man",
+		"ComicType": "Marvel"
+	},
+	{
+		"FirstName": "Natasha",
+		"LastName": "Romanova",
+		"HeroName": "Black Widow",
+		"ComicType": "Marvel"
+	},
+	{
+		"FirstName": "Steve",
+		"LastName": "Rogers",
+		"HeroName": "Captain America",
+		"ComicType": "Marvel"
+	},
+	{
+		"FirstName": "Scott",
+		"LastName": "Summers",
+		"HeroName": "Cyclops",
+		"ComicType": "Marvel"
+	},
+	{
+		"FirstName": "Matt",
+		"LastName": "Murdock",
+		"HeroName": "Daredevil",
+		"ComicType": "Marvel"
+	},
+	{
+		"FirstName": "Clint",
+		"LastName": "Barton",
+		"HeroName": "Hawkeye",
+		"ComicType": "Marvel"
+	},
+	{
+		"FirstName": "Bruce",
+		"LastName": "Banner",
+		"HeroName": "Hulk",
+		"ComicType": "Marvel"
+	},
+	{
+		"FirstName": "Johnny",
+		"LastName": "Storm",
+		"HeroName": "Human Torch",
+		"ComicType": "Marvel"
+	},
+	{
+		"FirstName": "Tony",
+		"LastName": "Stark",
+		"HeroName": "Ironman",
+		"ComicType": "Marvel"
+	},
+	{
+		"FirstName": "Ororo",
+		"LastName": "Munroe",
+		"HeroName": "Storm",
+		"ComicType": "Marvel"
+	},
+	{
+		"FirstName": "James",
+		"LastName": "Howlett",
+		"HeroName": "Wolverine",
+		"ComicType": "Marvel"
+	}
+]
+
