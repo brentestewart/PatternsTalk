@@ -9,6 +9,7 @@ namespace DesignPatternsExamples.HeroesWebService.Factories
 {
 	public interface IHeroFactory
 	{
+		List<Hero> GetAllHeroes();
 		Hero CreateRandomHero();
 		int HeroCount { get; }
 	}

@@ -19,6 +19,11 @@ namespace DesignPatternsExamples.HeroesWebService.Factories
 			BuildHeroList();
 		}
 
+		public List<Hero> GetAllHeroes()
+		{
+			return HeroList;
+		}
+
 		public Hero CreateRandomHero()
 		{
 			if (_currentIndex >= HeroList.Count)

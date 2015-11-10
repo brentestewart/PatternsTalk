@@ -12,7 +12,6 @@ namespace DesignPatternsExamples.HeroesWebService
     {
         public void Configuration(IAppBuilder app)
         {
-            ConfigureAuth(app);
         }
     }
 }
