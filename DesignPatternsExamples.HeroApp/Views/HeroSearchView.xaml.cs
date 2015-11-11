@@ -21,14 +21,17 @@ namespace DesignPatternsExamples.HeroApp.Views
 
 		private void ApiButton_OnClick(object sender, RoutedEventArgs e)
 		{
+
 		}
 
 		private void JsonButton_OnClick(object sender, RoutedEventArgs e)
 		{
+
 		}
 
 		private void ClearButton_OnClick(object sender, RoutedEventArgs e)
 		{
+
 		}
 	}
 }
