@@ -10,11 +10,11 @@ using Newtonsoft.Json;
 
 namespace DesignPatternsExamples.Common.Repositories
 {
-	public class JsonHeroRepository : IHeroRepository
+	public class MarvelHeroRepository : IHeroRepository
 	{
 		private readonly string _heroFilePath;
 
-		public JsonHeroRepository(string filePath)
+		public MarvelHeroRepository(string filePath)
 		{
 			_heroFilePath = filePath;
 		}
@@ -25,7 +25,7 @@ namespace DesignPatternsExamples.Common.Repositories
 				using (var reader = new StreamReader(_heroFilePath))
 				{
 					var contents = reader.ReadToEnd();
-					return JsonConvert.DeserializeObject<List<Hero>>(contents);
+					return JsonConvert.DeserializeObject<List<MarvelHero>>(contents).Cast<Hero>().ToList();
 				}
 			}
 

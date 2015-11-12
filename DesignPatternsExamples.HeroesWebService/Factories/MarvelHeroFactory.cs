@@ -38,17 +38,17 @@ namespace DesignPatternsExamples.HeroesWebService.Factories
 		{
 			HeroList = new List<Hero>
 			{
-				new Hero {FirstName = "Scott", LastName = "Lang", HeroName = "Ant-Man", ComicType = ComicType.Marvel},
-				new Hero {FirstName = "Natasha", LastName = "Romanova", HeroName = "Black Widow", ComicType = ComicType.Marvel},
-				new Hero {FirstName = "Steve", LastName = "Rogers", HeroName = "Captain America", ComicType = ComicType.Marvel},
-				new Hero {FirstName = "Scott", LastName = "Summers", HeroName = "Cyclops", ComicType = ComicType.Marvel},
-				new Hero {FirstName = "Matt", LastName = "Murdock", HeroName = "Daredevil", ComicType = ComicType.Marvel},
-				new Hero {FirstName = "Clint", LastName = "Barton", HeroName = "Hawkeye", ComicType = ComicType.Marvel},
-				new Hero {FirstName = "Bruce", LastName = "Banner", HeroName = "Hulk", ComicType = ComicType.Marvel},
-				new Hero {FirstName = "Johnny", LastName = "Storm", HeroName = "Human Torch", ComicType = ComicType.Marvel},
-				new Hero {FirstName = "Tony", LastName = "Stark", HeroName = "Ironman", ComicType = ComicType.Marvel},
-				new Hero {FirstName = "Ororo", LastName = "Munroe", HeroName = "Storm", ComicType = ComicType.Marvel},
-				new Hero {FirstName = "James", LastName = "Howlett", HeroName = "Wolverine", ComicType = ComicType.Marvel},
+				new MarvelHero {FirstName = "Scott", LastName = "Lang", HeroName = "Ant-Man", ComicType = ComicType.Marvel},
+				new MarvelHero {FirstName = "Natasha", LastName = "Romanova", HeroName = "Black Widow", ComicType = ComicType.Marvel},
+				new MarvelHero {FirstName = "Steve", LastName = "Rogers", HeroName = "Captain America", ComicType = ComicType.Marvel},
+				new MarvelHero {FirstName = "Scott", LastName = "Summers", HeroName = "Cyclops", ComicType = ComicType.Marvel},
+				new MarvelHero {FirstName = "Matt", LastName = "Murdock", HeroName = "Daredevil", ComicType = ComicType.Marvel},
+				new MarvelHero {FirstName = "Clint", LastName = "Barton", HeroName = "Hawkeye", ComicType = ComicType.Marvel},
+				new MarvelHero {FirstName = "Bruce", LastName = "Banner", HeroName = "Hulk", ComicType = ComicType.Marvel},
+				new MarvelHero {FirstName = "Johnny", LastName = "Storm", HeroName = "Human Torch", ComicType = ComicType.Marvel},
+				new MarvelHero {FirstName = "Tony", LastName = "Stark", HeroName = "Ironman", ComicType = ComicType.Marvel},
+				new MarvelHero {FirstName = "Ororo", LastName = "Munroe", HeroName = "Storm", ComicType = ComicType.Marvel},
+				new MarvelHero {FirstName = "James", LastName = "Howlett", HeroName = "Wolverine", ComicType = ComicType.Marvel},
 			};
 		}
 

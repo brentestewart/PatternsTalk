@@ -11,11 +11,11 @@ using Newtonsoft.Json;
 
 namespace DesignPatternsExamples.Common.Repositories
 {
-	public class WebApiHeroRepository : IHeroRepository
+	public class DCHeroRepository : IHeroRepository
 	{
 		private readonly string _serviceBaseUrl;
 
-		public WebApiHeroRepository(string servicePath)
+		public DCHeroRepository(string servicePath)
 		{
 			_serviceBaseUrl = servicePath;
 		}
@@ -26,18 +26,16 @@ namespace DesignPatternsExamples.Common.Repositories
 				using (var client = new HttpClient())
 				{
 					client.BaseAddress = new Uri(_serviceBaseUrl);
-					client.DefaultRequestHeaders.Accept.Clear();
-					client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-					var response = client.GetAsync("api/Heroes").Result;
+					var response = client.GetAsync("api/DCHeroes").Result;
 					if (response.IsSuccessStatusCode)
 					{
 						var content = response.Content.ReadAsStringAsync().Result;
-						return JsonConvert.DeserializeObject<List<Hero>>(content);
+						return JsonConvert.DeserializeObject<List<DCHero>>(content).Cast<Hero>().ToList();
 					}
 				}
 
 			}
-			catch (TimeoutException)
+			catch (Exception)
 			{
 				// service is not available
 			}

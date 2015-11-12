@@ -12,11 +12,11 @@ using DesignPatternsExamples.HeroesWebService.Factories;
 
 namespace DesignPatternsExamples.HeroesWebService.Controllers
 {
-    public class HeroesController : ApiController
+    public class DCHeroesController : ApiController
     {
 	    readonly IHeroFactory _heroFactory;
 
-		public HeroesController()
+		public DCHeroesController()
 	    {
 		    _heroFactory = HttpContext.Current.Application["HeroFactory"] as IHeroFactory;
 	    }

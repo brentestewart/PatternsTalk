@@ -8,6 +8,7 @@ using System.Net.Http.Headers;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
+using DesignPatternsExamples.Common.Factories;
 using DesignPatternsExamples.Common.Models;
 using DesignPatternsExamples.Common.Repositories;
 using Newtonsoft.Json;
@@ -16,23 +17,19 @@ namespace DesignPatternsExamples.HeroApp.Views
 {
 	public partial class HeroSearchView : UserControl
 	{
-		private readonly IHeroRepository _jsonRepository;
-		private readonly IHeroRepository _webApiRepository;
 		public HeroSearchView()
 		{
 			InitializeComponent();
-			_jsonRepository = new JsonHeroRepository(Properties.Settings.Default.HeroFilePath);
-			_webApiRepository = new WebApiHeroRepository(Properties.Settings.Default.WebApiUrl);
 		}
 
 		private void ApiButton_OnClick(object sender, RoutedEventArgs e)
 		{
-			LoadHeroList(_webApiRepository, "web service");
+            LoadHeroList(RepositoryType.DC, "web service");
 		}
 
 		private void JsonButton_OnClick(object sender, RoutedEventArgs e)
 		{
-			LoadHeroList(_jsonRepository, "json file");
+			LoadHeroList(RepositoryType.Marvel, "json file");
 		}
 
 		private void ClearButton_OnClick(object sender, RoutedEventArgs e)
@@ -40,14 +37,14 @@ namespace DesignPatternsExamples.HeroApp.Views
 			HeroList.ItemsSource = null;
 			StatusBar.Content = "";		}
 
-		private void LoadHeroList(IHeroRepository repository, string source)
+		private void LoadHeroList(RepositoryType repositoryType, string source)
 		{
 			StartLongRunningProcess($"Retrieving from {source}...");
 
 			var worker = new BackgroundWorker();
 			worker.DoWork += (obj, args) =>
 			{
-				args.Result = repository.GetHeroes();
+				args.Result = HeroFactory.GetHeroes(repositoryType);
 			};
 
 			worker.RunWorkerCompleted += (obj, args) =>
@@ -67,7 +64,7 @@ namespace DesignPatternsExamples.HeroApp.Views
 		{
 			if (heroes == null)
 			{
-				HeroList.ItemsSource = new List<Hero>() { new Hero() { HeroName = "Service down..." } };
+				HeroList.ItemsSource = new List<Hero>() { new UnknownHero() { HeroName = "Service down..." } };
 				StatusBar.Content = $"Could not connect to {source}.";
 			}
 			else

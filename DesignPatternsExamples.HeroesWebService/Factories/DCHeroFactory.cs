@@ -38,17 +38,17 @@ namespace DesignPatternsExamples.HeroesWebService.Factories
 		{
 			HeroList = new List<Hero>
 			{
-				new Hero {FirstName = "Arthur", LastName = "Curry", HeroName = "Aquaman", ComicType = ComicType.DC},
-				new Hero {FirstName = "Ray", LastName = "Palmer", HeroName = "Atom", ComicType = ComicType.DC},
-				new Hero {FirstName = "Bruce", LastName = "Wayne", HeroName = "Batman", ComicType = ComicType.DC},
-				new Hero {FirstName = "Oliver", LastName = "Queen", HeroName = "Green Arrow", ComicType = ComicType.DC},
-				new Hero {FirstName = "Hal", LastName = "Jordan", HeroName = "Green Lantern", ComicType = ComicType.DC},
-				new Hero {FirstName = "Carter", LastName = "Hall", HeroName = "Hawkman", ComicType = ComicType.DC},
-				new Hero {FirstName = "Peter", LastName = "Parker", HeroName = "Spiderman", ComicType = ComicType.DC},
-				new Hero {FirstName = "Kara", LastName = "Zor-El", HeroName = "Supergirl", ComicType = ComicType.DC},
-				new Hero {FirstName = "Clark", LastName = "Kent", HeroName = "Superman", ComicType = ComicType.DC},
-				new Hero {FirstName = "Barry", LastName = "Allen", HeroName = "The Flash", ComicType = ComicType.DC},
-				new Hero {FirstName = "Diana", LastName = "Prince", HeroName = "Wonder Woman", ComicType = ComicType.DC},
+				new DCHero {FirstName = "Arthur", LastName = "Curry", HeroName = "Aquaman", ComicType = ComicType.DC},
+				new DCHero {FirstName = "Ray", LastName = "Palmer", HeroName = "Atom", ComicType = ComicType.DC},
+				new DCHero {FirstName = "Bruce", LastName = "Wayne", HeroName = "Batman", ComicType = ComicType.DC},
+				new DCHero {FirstName = "Oliver", LastName = "Queen", HeroName = "Green Arrow", ComicType = ComicType.DC},
+				new DCHero {FirstName = "Hal", LastName = "Jordan", HeroName = "Green Lantern", ComicType = ComicType.DC},
+				new DCHero {FirstName = "Carter", LastName = "Hall", HeroName = "Hawkman", ComicType = ComicType.DC},
+				new DCHero {FirstName = "Peter", LastName = "Parker", HeroName = "Spiderman", ComicType = ComicType.DC},
+				new DCHero {FirstName = "Kara", LastName = "Zor-El", HeroName = "Supergirl", ComicType = ComicType.DC},
+				new DCHero {FirstName = "Clark", LastName = "Kent", HeroName = "Superman", ComicType = ComicType.DC},
+				new DCHero {FirstName = "Barry", LastName = "Allen", HeroName = "The Flash", ComicType = ComicType.DC},
+				new DCHero {FirstName = "Diana", LastName = "Prince", HeroName = "Wonder Woman", ComicType = ComicType.DC},
 			};
 		}
 	}

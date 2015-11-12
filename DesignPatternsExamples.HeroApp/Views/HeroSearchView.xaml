@@ -20,8 +20,8 @@
 		
 		<!--<Label Grid.Row="0" Grid.ColumnSpan="2" Content="Find a Hero" Style="{DynamicResource HeaderText}"/>-->
 
-		<Button Grid.Column="0" Grid.Row="0" Content="Hero Web Service" Style="{DynamicResource HeroButton}" Click="ApiButton_OnClick"/>
-		<Button Grid.Column="0" Grid.Row="1" Content="Hero Json File" Style="{DynamicResource HeroButton}" Click="JsonButton_OnClick"/>
+		<Button Grid.Column="0" Grid.Row="0" Content="DC Heroes (Web Service)" Style="{DynamicResource HeroButton}" Click="ApiButton_OnClick"/>
+		<Button Grid.Column="0" Grid.Row="1" Content="Marvel Heroes (Json File)" Style="{DynamicResource HeroButton}" Click="JsonButton_OnClick"/>
 		<Button Grid.Column="0" Grid.Row="2" Content="Clear Results" Style="{DynamicResource HeroButton}" Click="ClearButton_OnClick"/>
 		
 		<ListView Grid.Column="1" Grid.Row="0" Grid.RowSpan="3" Name="HeroList" Style="{DynamicResource HeroList}"/>

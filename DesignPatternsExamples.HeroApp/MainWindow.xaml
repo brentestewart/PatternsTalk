@@ -6,7 +6,7 @@
 		xmlns:views="clr-namespace:DesignPatternsExamples.HeroApp.Views"
         xmlns:local="clr-namespace:DesignPatternsExamples.HeroApp"
         mc:Ignorable="d"
-        Title="Hero Locator" Height="350" Width="525" Background="{DynamicResource MainBackgroundBrush}">
+        Title="Hero Locator" Height="350" Width="575" Background="{DynamicResource MainBackgroundBrush}">
     <Grid>
         <views:HeroSearchView/>
     </Grid>

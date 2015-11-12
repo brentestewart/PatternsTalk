@@ -1,6 +1,6 @@
 ﻿namespace DesignPatternsExamples.Common.Models
 {
-	public class Hero
+	public abstract class Hero
 	{
 		public string FirstName { get; set; }
 		public string LastName { get; set; }

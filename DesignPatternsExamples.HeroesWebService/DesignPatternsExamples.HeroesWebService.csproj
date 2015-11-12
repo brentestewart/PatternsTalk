@@ -175,7 +175,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\HeroesController.cs" />
+    <Compile Include="Controllers\DCHeroesController.cs" />
     <Compile Include="Factories\AllHeroFactory.cs" />
     <Compile Include="Factories\DCHeroFactory.cs" />
     <Compile Include="Factories\IHeroFactory.cs" />

@@ -45,13 +45,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Factories\HeroFactory.cs" />
+    <Compile Include="Factories\RepositoryType.cs" />
     <Compile Include="Models\ComicType.cs" />
+    <Compile Include="Models\DCHero.cs" />
     <Compile Include="Models\Hero.cs" />
+    <Compile Include="Models\MarvelHero.cs" />
+    <Compile Include="Models\UnknownHero.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\CachingRepository.cs" />
     <Compile Include="Repositories\IHeroRepository.cs" />
-    <Compile Include="Repositories\JsonHeroRepository.cs" />
-    <Compile Include="Repositories\WebApiHeroRepository.cs" />
+    <Compile Include="Repositories\MarvelHeroRepository.cs" />
+    <Compile Include="Repositories\DCHeroRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
