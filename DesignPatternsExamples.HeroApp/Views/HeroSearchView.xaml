@@ -25,5 +25,7 @@
 		<Button Grid.Column="0" Grid.Row="2" Content="Clear Results" Style="{DynamicResource HeroButton}" Click="ClearButton_OnClick"/>
 		
 		<ListView Grid.Column="1" Grid.Row="0" Grid.RowSpan="3" Name="HeroList" Style="{DynamicResource HeroList}"/>
+		
+		<Label Grid.Row="3" Grid.ColumnSpan="2" Name="StatusBar" Content=""/>
     </Grid>
 </UserControl>

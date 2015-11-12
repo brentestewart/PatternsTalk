@@ -20,12 +20,16 @@ namespace DesignPatternsExamples.Common.Repositories
 		}
 		public List<Hero> GetHeroes()
 		{
-			using (var reader = new StreamReader(_heroFilePath))
+			if (File.Exists(_heroFilePath))
 			{
-				var contents = reader.ReadToEnd();
-				var heroes = JsonConvert.DeserializeObject<List<Hero>>(contents);
-				return heroes;
+				using (var reader = new StreamReader(_heroFilePath))
+				{
+					var contents = reader.ReadToEnd();
+					return JsonConvert.DeserializeObject<List<Hero>>(contents);
+				}
 			}
+
+			return null;
 		}
 	}
 }

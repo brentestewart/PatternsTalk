@@ -42,7 +42,7 @@ namespace DesignPatternsExamples.Common.Repositories
 				// service is not available
 			}
 
-			return new List<Hero>() { new Hero() { HeroName = "Service not available..." } };
+			return null;
 		}
 	}
 }
